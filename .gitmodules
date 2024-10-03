@@ -1,0 +1,3 @@
+[submodule "ModelingEngine/ModelingEngine/Libraries/imgui"]
+	path = ModelingEngine/ModelingEngine/Libraries/imgui
+	url = https://github.com/ocornut/imgui.git
