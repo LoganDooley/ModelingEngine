@@ -3,6 +3,7 @@
 #include "backends/imgui_impl_opengl3.h"
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include "Libraries/tinyfiledialogs/tinyfiledialogs.h"
 
 int main() {
 	if (!glfwInit()) {
@@ -38,8 +39,37 @@ int main() {
 		ImGui_ImplOpenGL3_NewFrame();
 		ImGui_ImplGlfw_NewFrame();
 		ImGui::NewFrame();
-		ImGui::ShowDemoWindow(); // Show demo window! :)
+		//ImGui::ShowDemoWindow(); // Show demo window! :)
 	
+		// Menu bar
+		{
+			if (ImGui::BeginMainMenuBar()) {
+				if (ImGui::BeginMenu("File")) {
+					if (ImGui::MenuItem("Open")) {
+						char const* lFilterPatterns[1] = { "*.meng" };
+						// Open file dialog
+						char* fileName = tinyfd_openFileDialog("Select a Scene File", "", 1, lFilterPatterns, NULL, 0);
+						if (!fileName) {
+							tinyfd_messageBox(
+								"Error",
+								"Open file name is NULL",
+								"ok",
+								"error",
+								1);
+						}
+					}
+					if (ImGui::MenuItem("Save")) {
+
+					}
+					if (ImGui::MenuItem("Save as...")) {
+
+					}
+					ImGui::EndMenu();
+				}
+				ImGui::EndMainMenuBar();
+			}
+		}
+
 		// Normal rendering
 
 		ImGui::Render();

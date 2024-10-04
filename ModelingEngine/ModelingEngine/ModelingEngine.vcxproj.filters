@@ -43,6 +43,9 @@
     <Filter Include="Libraries\glad\include\glad">
       <UniqueIdentifier>{1beb1a3e-9868-46ea-8614-769dac982a59}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Libraries\tinyfiledialogs">
+      <UniqueIdentifier>{37b3a4d6-9f01-4fea-a23f-5ed89267f11a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -75,6 +78,9 @@
     <ClCompile Include="Libraries\imgui\backends\imgui_impl_opengl3.cpp">
       <Filter>Libraries\imgui\backends</Filter>
     </ClCompile>
+    <ClCompile Include="Libraries\tinyfiledialogs\tinyfiledialogs.c">
+      <Filter>Libraries\tinyfiledialogs</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Libraries\imgui\imconfig.h">
@@ -106,6 +112,9 @@
     </ClInclude>
     <ClInclude Include="Libraries\imgui\backends\imgui_impl_opengl3.h">
       <Filter>Libraries\imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\tinyfiledialogs\tinyfiledialogs.h">
+      <Filter>Libraries\tinyfiledialogs</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

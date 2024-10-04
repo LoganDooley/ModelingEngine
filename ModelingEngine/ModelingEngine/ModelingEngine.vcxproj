@@ -144,6 +144,7 @@
     <ClCompile Include="Libraries\imgui\imgui_tables.cpp" />
     <ClCompile Include="Libraries\imgui\imgui_widgets.cpp" />
     <ClCompile Include="Libraries\imgui\misc\cpp\imgui_stdlib.cpp" />
+    <ClCompile Include="Libraries\tinyfiledialogs\tinyfiledialogs.c" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +158,7 @@
     <ClInclude Include="Libraries\imgui\imstb_textedit.h" />
     <ClInclude Include="Libraries\imgui\imstb_truetype.h" />
     <ClInclude Include="Libraries\imgui\misc\cpp\imgui_stdlib.h" />
+    <ClInclude Include="Libraries\tinyfiledialogs\tinyfiledialogs.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Libraries\imgui\misc\debuggers\imgui.natstepfilter" />
