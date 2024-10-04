@@ -72,6 +72,9 @@
     <ClCompile Include="Libraries\glad\src\glad.c">
       <Filter>Libraries\glad\src</Filter>
     </ClCompile>
+    <ClCompile Include="Libraries\imgui\backends\imgui_impl_opengl3.cpp">
+      <Filter>Libraries\imgui\backends</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Libraries\imgui\imconfig.h">
@@ -100,6 +103,9 @@
     </ClInclude>
     <ClInclude Include="Libraries\glad\include\glad\glad.h">
       <Filter>Libraries\glad\include\glad</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\imgui\backends\imgui_impl_opengl3.h">
+      <Filter>Libraries\imgui\backends</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
